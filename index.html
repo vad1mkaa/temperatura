@@ -1,2 +1,49 @@
 <!DOCTYPE html>
-<html lang ="lv"
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Temperatūras ieraksti</h1>
+
+<label>
+    Datums:
+    <input type="date" id="date">
+</label>
+
+<label>
+    Mazākā temperatūra:
+    <input type="number" id="min">
+</label>
+
+<label>
+    Lielākā temperatūra:
+    <input type="number" id="max">
+</label>
+
+<button onclick="addRow()">Pievienot</button>
+
+<h2>Temperatūru saraksts</h2>
+
+<table border="1">
+    <tr>
+        <th>Datums</th>
+        <th>Mazākā temperatūra</th>
+        <th>Lielākā temperatūra</th>
+        <th>Vidējā temperatūra</th>
+    </tr>
+    <tbody id="table">
+    </tbody>
+</table>
+
+<p>
+    Vidējā temperatūra visām dienām:
+    <span id="avgAll">0.00</span>
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
